@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Entry Form</title>
+    <link rel="stylesheet" href="styles/main.css"> <!-- External CSS file -->
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add a New Blog Post</h2>
+        <form id="blog-form" action="/post" method="POST">
+            <!-- Blog Title -->
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter blog title" required>
+
+            <!-- Blog Author -->
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" placeholder="Enter author name" required>
+
+            <!-- Blog Content -->
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="10" placeholder="Write your blog content here..." required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Post</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>
